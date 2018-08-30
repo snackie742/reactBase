@@ -1,0 +1,4 @@
+#clip {
+    position: absolute;
+    clip: rect(0, 213px, 144px, 0);
+}

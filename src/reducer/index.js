@@ -1,0 +1,1 @@
+export { default as dailyGames } from '../components/dailyGames/dailyGames.reducer';
