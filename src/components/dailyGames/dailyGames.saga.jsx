@@ -3,16 +3,27 @@ import { DAILY_GAME_ACTIONS } from './dailyGames.actions';
 import api from '../../sagas/api';
 
 export function* getGames({ payload: date }) {
-  console.log('saga');
   const { getGames } = api.getGames;
-  console.log(getGames);
   try{
-    const response = yield getGames();
+    const response = yield getGames(date);
     const { status, data } = response;
-    console.log(response);
+    if (status === 200) {
+      yield put({
+        type: DAILY_GAME_ACTIONS.FETCH_DAILY_GAMES_SUCCESS,
+        data,
+      });
+    } else {
+      yield put({
+        type: DAILY_GAME_ACTIONS.FETCH_DAILY_GAMES_FAILURE,
+        errorMessage: 'Failed to load Games',
+      });
+    }
   } catch (e){
     if(e.response){
-      console.log('exception');
+      yield put({
+        type: DAILY_GAME_ACTIONS.FETCH_DAILY_GAMES_FAILURE,
+        errorMessage: 'Failed to load Games' + e.response,
+      });
     }
   }
 }

@@ -1,4 +1,4 @@
-import { DAILY_GAME_ACTIONS } from './dailyGames.actions';
+import { GAME_SCORES_ACTIONS } from './gameScores.actions';
 
 export const initialState = {
   loading: false,
@@ -7,18 +7,18 @@ export const initialState = {
 export default function reducer(state = initialState, action) {
   const { type, data, errorMessage } = action;
   switch(type) {
-    case DAILY_GAME_ACTIONS.FETCH_DAILY_GAMES:
+    case GAME_SCORES_ACTIONS.FETCH_GAME_SCORES:
       return {
         ...state,
         loading: true,
       };
-    case DAILY_GAME_ACTIONS.FETCH_DAILY_GAMES_SUCCESS:
+    case GAME_SCORES_ACTIONS.FETCH_GAME_SCORES_SUCCESS:
       return {
         ...state,
         ...data,
         loading: false,
       };
-    case DAILY_GAME_ACTIONS.FETCH_DAILY_GAMES_FAILURE:
+    case GAME_SCORES_ACTIONS.FETCH_GAME_SCORES_FAILURE:
       return {
         ...state,
         errorMessage,

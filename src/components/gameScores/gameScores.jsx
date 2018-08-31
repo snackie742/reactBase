@@ -36,32 +36,43 @@ const teams = {
     Nationals: 'Nationals',
 };
 
-export const GameScore = ({ away }) => (
-    <Fragment>
-      {away.teamName}
-      <img id="clip" src={logos} />
-    </Fragment>
+export const GameScore = ({ away, home, awayScore, homeScore }) => (
+  <Fragment>
+    <div className="row">
+      {/* <img id="clip" src={logos} className='MIL'/> */}
+      {away.City} - {awayScore}
+    </div>
+    <div className="row">
+      {home.City} - {homeScore}
+      {/* <img id="clip" src={logos} className='ARI'/> */}
+    </div>
+    <br />
+  </Fragment>
 );
 
 GameScore.propTypes = {
     away: PropTypes.shape({
-      teamName: PropTypes.string,
+      City: PropTypes.string,
       abbreviation: PropTypes.string,
     }),
+    awayScore: PropTypes.number,
     home: PropTypes.shape({
-      teamName: PropTypes.string,
+      City: PropTypes.string,
       abbreviation: PropTypes.string,
     }),
+    homeScore: PropTypes.number,
 };
 
 GameScore.propTypes = {
     away: PropTypes.shape({
-      teamName: '',
+      City: '',
       abbreviation: '',
     }),
+    awayScore: 0,
     home: PropTypes.shape({
-      teamName: '',
+      City: '',
       abbreviation: '',
     }),
+    homeScore: 0,
 };
 export default GameScore;

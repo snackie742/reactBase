@@ -4,6 +4,7 @@ export const DAILY_GAME_ACTIONS = {
   FETCH_DAILY_GAMES_FAILURE: 'FETCH_DAILY_GAMES_FAILURE',
 };
 
-export const getGames = () => ({
+export const getGames = (date) => ({
     type: DAILY_GAME_ACTIONS.FETCH_DAILY_GAMES,
+    payload: date,
 });
