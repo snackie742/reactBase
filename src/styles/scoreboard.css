@@ -4,34 +4,50 @@
     font-size: 3rem !important;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding-left: 75px;
+    padding-left: 10%;
  }
 
  .scoreBoardInnings {
      max-width: 5% !important;
  }
  .scoreBoardSpacer {
-     margin-left: 45px;
+     margin-left: 5%;
  }
 .scoreboardTeamName{
     font-size: 3rem;
     font-weight: bold;
 }
  .pitchingSpacer {
-     margin-left: 250px;
+     margin-left: 30%;
      font-size:2rem;
  }
  .lineupCard {
      padding-left:0px !important;
      font-size: 2rem;
  }
- .lineupPct{
-    max-width: 5% !important;
- }
 .lineupEntry{
     max-width: 2% !important;
 }
-.lineupTitles{
-    max-width: 8% !important;
+.lineupHeader {
     font-size:1.5rem;
+}
+
+.lineupAB{
+    padding-left:8px !important;
+}
+.lineupRuns{
+    padding-left:20px !important;
+}
+.lineupWalks{
+    padding-left:10px !important;
+}
+.lineupKs{
+    padding-left:20px !important;
+}
+.lineupAvg{
+    padding-left:18px !important;
+}
+.staticRow{
+    margin-bottom: 0 !important;
+    height:3rem;
 }

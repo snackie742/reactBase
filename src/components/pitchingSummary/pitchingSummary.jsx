@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../../styles/scoreboard.css';
 
-export const PitchingSummary = ({ winningPitcher, losingPitcher, savingPitcher }) => {
+const PitchingSummary = ({ winningPitcher, losingPitcher, savingPitcher }) => {
     return(
       <div className="col-lg pitchingSpacer" >
         <div className="row">{`W - ${winningPitcher.player.FirstName} ${winningPitcher.player.LastName}`}</div>

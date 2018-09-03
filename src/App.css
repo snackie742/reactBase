@@ -1,21 +1,37 @@
 .App {
   text-align: center;
+  background-color:#eaeaea;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
 
-.App-header {
-  background-color: #000;
+.App-header, .App-footer{
+  background-color: #002e6d;
   height: 150px;
   padding: 20px;
+  text-align: left;
   color: white;
 }
-
+.App-footer{
+  background-color: #d50032;
+  height: 50px;
+  text-align: center;
+}
 .App-title {
-  font-size: 1.5em;
+  font-size: 4em;
+}
+
+@media only screen and (max-width: 992px) {
+  .App-title{
+    font-size:3em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .App-title{
+    font-size:2em;
+  }
 }
 
 .App-intro {
@@ -31,4 +47,6 @@
   margin-top:20px;
   margin-left:50px;
   margin-right:50px;
+  margin-bottom: 50px;
+  background-color:transparent;
 }

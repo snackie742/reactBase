@@ -17,8 +17,14 @@ class Modal extends Component {
              overlayClassName="Overlay"
              ariaHideApp={false}
           >
+          <div className="row">
+          <div className="col-sm-12">
+            <button type="button" className="close" onClick={this.props.onClose}>
+              <span className="modalClose" ariaHideApp={false}>x</span>
+            </button>
+          </div>
+          </div>
             {this.props.children}
-              <button onClick={this.props.onClose}>Close Modal</button>
           </ReactModal>
          }
         </Fragment>

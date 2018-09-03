@@ -4,6 +4,7 @@ import Modal from '../common/modal';
 import InningSummary from '../inningSummary/inningSummary';
 import PitchingSummary from '../pitchingSummary/pitchingSummary';
 import Lineup from '../lineup/lineup';
+import Loader from 'react-loader';
 
 const getRHE = teamStats => ({
   runs: teamStats.RunsFor['#text'],
@@ -23,21 +24,22 @@ const getPitchers = players => (
  players.filter(player => player.player.Position === 'P'));;
 
 const headerRow = (
-  <div className="row">
-    <div className="col-lg-5">&nbsp; </div>
-    <div className="col-lg-6">
-      <div className="row">
-        <div className="col lineupTitles">AB</div>
-        <div className="col lineupTitles">R</div>
-        <div className="col lineupTitles">H</div>
-        <div className="col lineupTitles">BB</div>
-        <div className="col lineupTitles">K</div>
-        <div className="col lineupTitles">AVG</div>
+      <div className="col-lg lineupCard" >
+        <div className="row staticRow">
+          <div className="col-lg-5">&nbsp; </div>
+          <div className="col-lg-6">
+            <div className="row">
+              <div className="col lineupEntry lineupHeader lineupAB">AB</div>
+              <div className="col lineupEntry lineupHeader lineupRuns">R</div>
+              <div className="col lineupEntry lineupHeader">H</div>
+              <div className="col lineupEntry lineupHeader lineupWalks">BB</div>
+              <div className="col lineupEntry lineupHeader lineupKs">K</div>
+              <div className="col lineupEntry lineupHeader lineupAvg">Avg</div>
+            </div>
+         </div>
+        </div>
       </div>
-    </div>
-  </div>);
-
-
+);
 const BoxScoreModal = ({ show, handleClose, gameboxscore }) => {
     const { awayTeam, homeTeam } =  gameboxscore.game;
     const { inning } = gameboxscore.inningSummary;
@@ -48,37 +50,54 @@ const BoxScoreModal = ({ show, handleClose, gameboxscore }) => {
     const winner = getWinningPitcher(homePitchers) || getWinningPitcher(awayPitchers);
     const loser = getLosingPitcher(homePitchers) || getLosingPitcher(awayPitchers);
     const saver = getSavingPitcher(homePitchers) || getSavingPitcher(awayPitchers);
+    console.log(gameboxscore);
   return (
     <Modal
-      show={show}
-      onClose={handleClose}
+        show={show}
+        onClose={handleClose}
+      >
+    <Loader
+      loaded={inning.length > 0}
+      color={'#fff'}
     >
-      <Fragment>
-        <div className="scoreBoard">
-          <div className="row">
-            <div className="col-lg-1" >
-              <p>&nbsp;</p>
-              <p>{awayTeam.Abbreviation}</p>
-              <p>{homeTeam.Abbreviation}</p>
+        <Fragment>
+          <div className="scoreBoard">
+            <div className="row">
+              <div className="col-sm-1" >
+                <p>&nbsp;</p>
+                <p>{awayTeam.Abbreviation}</p>
+                <p>{homeTeam.Abbreviation}</p>
+              </div>
+              <InningSummary
+                summary={inning}
+                awayRHE={getRHE(gameboxscore.awayTeam.awayTeamStats)}
+                homeRHE={getRHE(gameboxscore.homeTeam.homeTeamStats)}
+              />
             </div>
-            <InningSummary
-              summary={inning}
-              awayRHE={getRHE(gameboxscore.awayTeam.awayTeamStats)}
-              homeRHE={getRHE(gameboxscore.homeTeam.homeTeamStats)}
-            />
-          </div>
-          <div className ="row">
-            <PitchingSummary
-              winningPitcher={winner}
-              losingPitcher={loser}
-              savingPitcher={saver}
-            />
-           </div>
-           <div className = "row">
-             <div className = "col-lg-6">
-             <h1 className="scoreboardTeamName">{`${awayTeam.City} ${awayTeam.Name}`}</h1>
+            <div className ="row">
+              <PitchingSummary
+                winningPitcher={winner}
+                losingPitcher={loser}
+                savingPitcher={saver}
+              />
+            </div>
+            <div className = "row">
+              <div className = "col-sm-6">
+              <h1 className="scoreboardTeamName">{`${awayTeam.City} ${awayTeam.Name}`}</h1>
+                {headerRow}
+                {awayPlayers && awayPlayers.map(player =>(
+                  <div className ="row" key={player}>
+                    <Lineup
+                      playerEntry={player}
+                    />
+                  </div>
+                ))
+                }
+            </div>
+            <div className="col-sm-6">
+              <h1 className="scoreboardTeamName">{`${homeTeam.City} ${homeTeam.Name}`}</h1>
               {headerRow}
-              { awayPlayers && awayPlayers.map(player =>(
+              {homePlayers && homePlayers.map(player =>(
                 <div className ="row" key={player}>
                   <Lineup
                     playerEntry={player}
@@ -86,23 +105,12 @@ const BoxScoreModal = ({ show, handleClose, gameboxscore }) => {
                 </div>
               ))
               }
-           </div>
-           <div className="col-lg-6">
-             <h1 className="scoreboardTeamName">{`${homeTeam.City} ${homeTeam.Name}`}</h1>
-            {headerRow}
-            { homePlayers && homePlayers.map(player =>(
-              <div className ="row" key={player}>
-                <Lineup
-                  playerEntry={player}
-                />
-              </div>
-            ))
-            }
-           </div>
-         </div>
-        </div>
-      </Fragment>
-    </Modal>
+            </div>
+          </div>
+          </div>
+        </Fragment>
+    </Loader>
+      </Modal>
   );
 };
 

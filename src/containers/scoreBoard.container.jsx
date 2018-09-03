@@ -5,6 +5,7 @@ import { getGames } from '../components/dailyGames/dailyGames.actions';
 import { getScores } from '../components/gameScores/gameScores.actions';
 import GameScore from '../components/gameScores/gameScores';
 import moment from 'moment';
+import DailyGamesCarousel from '../components/dailyGames/dailyGamesCarousel';
 
 export const mapStateToProps = ({ dailyGames, gameScores }) =>
 ({
@@ -16,18 +17,28 @@ export const mapDispatchToProps = {
   getScores,
 };
 
-const yesterday = new Date();
 export class ScoreBoard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      yesterday: new Date(),
+    };
+    this.state.yesterday.setDate(this.state.yesterday.getDate() - 1);
+
+  }
   componentDidMount(){
-    yesterday.setDate(yesterday.getDate() - 1);
     this.props.getGames(moment().format('YYYYMMDD'));
-    this.props.getScores(moment(yesterday).format('YYYYMMDD'));
+    this.props.getScores(moment(this.state.yesterday).format('YYYYMMDD'));
   }
   
   render(){
     const { gameScore } = this.props.scoreboard;
+    const { yesterday } = this.state;
     return(
       <Fragment>
+        <DailyGamesCarousel
+          games={this.props.dailygameschedule.gameentry}
+        />
         <h1>Scores for {moment(yesterday).format('MMMM D, YYYY')}</h1>
         <hr />
         <div className="row">

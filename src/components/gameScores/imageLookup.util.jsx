@@ -19,7 +19,7 @@ import NYM from '../../images/NYM.png';
 import NYY from '../../images/NYY.png';
 import OAK from '../../images/OAK.png';
 import PHI from '../../images/PHI.png';
-import PIT from '../../images/ARI.png';
+import PIT from '../../images/PIT.png';
 import SD from '../../images/SD.png';
 import SEA from '../../images/SEA.png';
 import SF from '../../images/SF.png';
