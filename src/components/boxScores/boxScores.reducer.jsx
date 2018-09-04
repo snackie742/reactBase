@@ -27,7 +27,7 @@ export const initialState = {
       ...inintialStats,
       },
       awayPlayers: {
-        playerEntry: [...initialPlayerEntry],
+        playerEntry: [{...initialPlayerEntry}],
       },
     },
     homeTeam: {
@@ -35,7 +35,7 @@ export const initialState = {
         ...inintialStats,
       },
       homePlayers: {
-        playerEntry: [...initialPlayerEntry],
+        playerEntry: [{...initialPlayerEntry}],
       },
     },
     game: { 

@@ -20,7 +20,7 @@ class Modal extends Component {
           <div className="row">
           <div className="col-sm-12">
             <button type="button" className="close" onClick={this.props.onClose}>
-              <span className="modalClose" ariaHideApp={false}>x</span>
+              <span className="modalClose">x</span>
             </button>
           </div>
           </div>
@@ -34,13 +34,11 @@ class Modal extends Component {
   
 Modal.propTypes = {
     children: PropTypes.any.isRequired,
-    title: PropTypes.string,
     show: PropTypes.bool,
     onClose: PropTypes.func.isRequired,
 };
 
 Modal.defaultProps = {
-    title: '',
     show: false,
 };
 

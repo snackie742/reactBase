@@ -26,7 +26,11 @@ const Carousel = ({children}) => {
 };
 
 Carousel.propTypes = {
-  children: PropTypes.any.isRequired,
+  children: PropTypes.any,
+};
+
+Carousel.defaultProps = {
+  children: [],
 };
 
 export default Carousel;

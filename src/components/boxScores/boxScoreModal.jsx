@@ -6,28 +6,28 @@ import PitchingSummary from '../pitchingSummary/pitchingSummary';
 import Lineup from '../lineup/lineup';
 import Loader from 'react-loader';
 
-const getRHE = teamStats => ({
+export const getRHE = teamStats => ({
   runs: teamStats.RunsFor['#text'],
   hits: teamStats.Hits['#text'],
   errors: teamStats.Errors['#text']});
 
-const getLosingPitcher = pitchers => (pitchers.filter(pitcher =>
+export const getLosingPitcher = pitchers => (pitchers.filter(pitcher =>
   pitcher.stats.Losses['#text'] === '1').find(pitcher => pitcher));
 
-const getWinningPitcher = pitchers => (pitchers.filter(pitcher =>
+export const getWinningPitcher = pitchers => (pitchers.filter(pitcher =>
   pitcher.stats.Wins['#text'] === '1').find(pitcher => pitcher));
 
-const getSavingPitcher = pitchers => (pitchers.filter(pitcher =>
+export const getSavingPitcher = pitchers => (pitchers.filter(pitcher =>
   pitcher.stats.Saves['#text'] === '1').find(pitcher => pitcher));
 
-const getPitchers = players => (
+export const getPitchers = players => (
  players.filter(player => player.player.Position === 'P'));;
 
 const headerRow = (
       <div className="col-lg lineupCard" >
         <div className="row staticRow">
-          <div className="col-lg-5">&nbsp; </div>
-          <div className="col-lg-6">
+          <div className="col-lg-5 col-sm-1">&nbsp; </div>
+          <div className="col-lg-6 col-sm-7">
             <div className="row">
               <div className="col lineupEntry lineupHeader lineupAB">AB</div>
               <div className="col lineupEntry lineupHeader lineupRuns">R</div>
@@ -50,7 +50,6 @@ const BoxScoreModal = ({ show, handleClose, gameboxscore }) => {
     const winner = getWinningPitcher(homePitchers) || getWinningPitcher(awayPitchers);
     const loser = getLosingPitcher(homePitchers) || getLosingPitcher(awayPitchers);
     const saver = getSavingPitcher(homePitchers) || getSavingPitcher(awayPitchers);
-    console.log(gameboxscore);
   return (
     <Modal
         show={show}
@@ -85,8 +84,8 @@ const BoxScoreModal = ({ show, handleClose, gameboxscore }) => {
               <div className = "col-sm-6">
               <h1 className="scoreboardTeamName">{`${awayTeam.City} ${awayTeam.Name}`}</h1>
                 {headerRow}
-                {awayPlayers && awayPlayers.map(player =>(
-                  <div className ="row" key={player}>
+                {awayPlayers && awayPlayers.map((player, index) =>(
+                  <div className ="row" key={index}>
                     <Lineup
                       playerEntry={player}
                     />
@@ -97,8 +96,8 @@ const BoxScoreModal = ({ show, handleClose, gameboxscore }) => {
             <div className="col-sm-6">
               <h1 className="scoreboardTeamName">{`${homeTeam.City} ${homeTeam.Name}`}</h1>
               {headerRow}
-              {homePlayers && homePlayers.map(player =>(
-                <div className ="row" key={player}>
+              {homePlayers && homePlayers.map((player, index) =>(
+                <div className ="row" key={index}>
                   <Lineup
                     playerEntry={player}
                   />

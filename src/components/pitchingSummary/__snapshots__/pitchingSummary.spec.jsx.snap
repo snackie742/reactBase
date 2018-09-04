@@ -1,0 +1,381 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PitchingSummary <PitchingSummary/> (Snapshot) renders as expected with save 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PitchingSummary
+    losingPitcher={
+        Object {
+            "player": Object {
+              "FirstName": "Losing",
+              "LastName": "Pitcher",
+            },
+          }
+    }
+    savingPitcher={
+        Object {
+            "player": Object {
+              "FirstName": "Saving",
+              "LastName": "Pitcher",
+            },
+          }
+    }
+    winningPitcher={
+        Object {
+            "player": Object {
+              "FirstName": "Winning",
+              "LastName": "Pitcher",
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="row"
+>
+          W - Winning Pitcher
+</div>,
+        <div
+          className="row"
+>
+          L - Losing Pitcher
+</div>,
+        <div
+          className="row"
+>
+          S - Saving Pitcher
+</div>,
+      ],
+      "className": "col-lg pitchingSpacer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "W - Winning Pitcher",
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": "W - Winning Pitcher",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "L - Losing Pitcher",
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": "L - Losing Pitcher",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "S - Saving Pitcher",
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": "S - Saving Pitcher",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="row"
+>
+            W - Winning Pitcher
+</div>,
+          <div
+            className="row"
+>
+            L - Losing Pitcher
+</div>,
+          <div
+            className="row"
+>
+            S - Saving Pitcher
+</div>,
+        ],
+        "className": "col-lg pitchingSpacer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "W - Winning Pitcher",
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": "W - Winning Pitcher",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "L - Losing Pitcher",
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": "L - Losing Pitcher",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "S - Saving Pitcher",
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": "S - Saving Pitcher",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`PitchingSummary <PitchingSummary/> (Snapshot) renders as expected with without save 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PitchingSummary
+    losingPitcher={
+        Object {
+            "player": Object {
+              "FirstName": "Losing",
+              "LastName": "Pitcher",
+            },
+          }
+    }
+    savingPitcher={
+        Object {
+            "player": Object {
+              "FirstName": "Saving",
+              "LastName": "Pitcher",
+            },
+          }
+    }
+    winningPitcher={
+        Object {
+            "player": Object {
+              "FirstName": "Winning",
+              "LastName": "Pitcher",
+            },
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="row"
+>
+          W - Winning Pitcher
+</div>,
+        <div
+          className="row"
+>
+          L - Losing Pitcher
+</div>,
+        <div
+          className="row"
+>
+          S - Saving Pitcher
+</div>,
+      ],
+      "className": "col-lg pitchingSpacer",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "W - Winning Pitcher",
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": "W - Winning Pitcher",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "L - Losing Pitcher",
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": "L - Losing Pitcher",
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "S - Saving Pitcher",
+          "className": "row",
+        },
+        "ref": null,
+        "rendered": "S - Saving Pitcher",
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="row"
+>
+            W - Winning Pitcher
+</div>,
+          <div
+            className="row"
+>
+            L - Losing Pitcher
+</div>,
+          <div
+            className="row"
+>
+            S - Saving Pitcher
+</div>,
+        ],
+        "className": "col-lg pitchingSpacer",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "W - Winning Pitcher",
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": "W - Winning Pitcher",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "L - Losing Pitcher",
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": "L - Losing Pitcher",
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "S - Saving Pitcher",
+            "className": "row",
+          },
+          "ref": null,
+          "rendered": "S - Saving Pitcher",
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

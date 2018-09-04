@@ -1,0 +1,1219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InningSummary <InningSummary/> (Snapshot) renders as expected dash 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    awayRHE={
+        Object {
+            "errors": "0",
+            "hits": "4",
+            "runs": "0",
+          }
+    }
+    homeRHE={
+        Object {
+            "errors": "1",
+            "hits": "3",
+            "runs": "1",
+          }
+    }
+    summary={
+        Array [
+            Object {
+              "@number": "1",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "2",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "3",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "4",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "5",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "6",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "7",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "8",
+              "awayScore": "0",
+              "homeScore": "1",
+            },
+            Object {
+              "@number": "9",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        Array [
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="1"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="2"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="3"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="4"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="5"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="6"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="7"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="1"
+            statAbbr="8"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="-"
+            statAbbr="9"
+/>,
+        ],
+        <Unknown
+          awayValue="0"
+          className="scoreBoardSpacer"
+          homeValue="1"
+          statAbbr="R"
+/>,
+        <Unknown
+          awayValue="4"
+          className=""
+          homeValue="3"
+          statAbbr="H"
+/>,
+        <Unknown
+          awayValue="0"
+          className=""
+          homeValue="1"
+          statAbbr="E"
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "1",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "3",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "4",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "5",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "6",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "6",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "7",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "7",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "1",
+          "statAbbr": "8",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "8",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "-",
+          "statAbbr": "9",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "scoreBoardSpacer",
+          "homeValue": "1",
+          "statAbbr": "R",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "4",
+          "className": "",
+          "homeValue": "3",
+          "statAbbr": "H",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "1",
+          "statAbbr": "E",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          Array [
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="1"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="2"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="3"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="4"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="5"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="6"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="7"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="1"
+              statAbbr="8"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="-"
+              statAbbr="9"
+/>,
+          ],
+          <Unknown
+            awayValue="0"
+            className="scoreBoardSpacer"
+            homeValue="1"
+            statAbbr="R"
+/>,
+          <Unknown
+            awayValue="4"
+            className=""
+            homeValue="3"
+            statAbbr="H"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="1"
+            statAbbr="E"
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "4",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "5",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "6",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "6",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "7",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "7",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "1",
+            "statAbbr": "8",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "8",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "-",
+            "statAbbr": "9",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "scoreBoardSpacer",
+            "homeValue": "1",
+            "statAbbr": "R",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "4",
+            "className": "",
+            "homeValue": "3",
+            "statAbbr": "H",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "1",
+            "statAbbr": "E",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`InningSummary <InningSummary/> (Snapshot) renders as expected no dash 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    awayRHE={
+        Object {
+            "errors": "0",
+            "hits": "4",
+            "runs": "1",
+          }
+    }
+    homeRHE={
+        Object {
+            "errors": "1",
+            "hits": "3",
+            "runs": "0",
+          }
+    }
+    summary={
+        Array [
+            Object {
+              "@number": "1",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "2",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "3",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "4",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "5",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "6",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "7",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "8",
+              "awayScore": "0",
+              "homeScore": "0",
+            },
+            Object {
+              "@number": "9",
+              "awayScore": "1",
+              "homeScore": "0",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        Array [
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="1"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="2"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="3"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="4"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="5"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="6"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="7"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="0"
+            statAbbr="8"
+/>,
+          <Unknown
+            awayValue="1"
+            className=""
+            homeValue="0"
+            statAbbr="9"
+/>,
+        ],
+        <Unknown
+          awayValue="1"
+          className="scoreBoardSpacer"
+          homeValue="0"
+          statAbbr="R"
+/>,
+        <Unknown
+          awayValue="4"
+          className=""
+          homeValue="3"
+          statAbbr="H"
+/>,
+        <Unknown
+          awayValue="0"
+          className=""
+          homeValue="1"
+          statAbbr="E"
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "1",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "2",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "3",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "4",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "4",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "5",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "6",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "6",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "7",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "7",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "8",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "8",
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "1",
+          "className": "",
+          "homeValue": "0",
+          "statAbbr": "9",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "1",
+          "className": "scoreBoardSpacer",
+          "homeValue": "0",
+          "statAbbr": "R",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "4",
+          "className": "",
+          "homeValue": "3",
+          "statAbbr": "H",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "awayValue": "0",
+          "className": "",
+          "homeValue": "1",
+          "statAbbr": "E",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": Symbol(react.fragment),
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          Array [
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="1"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="2"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="3"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="4"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="5"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="6"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="7"
+/>,
+            <Unknown
+              awayValue="0"
+              className=""
+              homeValue="0"
+              statAbbr="8"
+/>,
+            <Unknown
+              awayValue="1"
+              className=""
+              homeValue="0"
+              statAbbr="9"
+/>,
+          ],
+          <Unknown
+            awayValue="1"
+            className="scoreBoardSpacer"
+            homeValue="0"
+            statAbbr="R"
+/>,
+          <Unknown
+            awayValue="4"
+            className=""
+            homeValue="3"
+            statAbbr="H"
+/>,
+          <Unknown
+            awayValue="0"
+            className=""
+            homeValue="1"
+            statAbbr="E"
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "1",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "2",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "3",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "4",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "4",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "5",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "6",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "6",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "7",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "7",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "8",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "8",
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "1",
+            "className": "",
+            "homeValue": "0",
+            "statAbbr": "9",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "1",
+            "className": "scoreBoardSpacer",
+            "homeValue": "0",
+            "statAbbr": "R",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "4",
+            "className": "",
+            "homeValue": "3",
+            "statAbbr": "H",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "awayValue": "0",
+            "className": "",
+            "homeValue": "1",
+            "statAbbr": "E",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": Symbol(react.fragment),
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

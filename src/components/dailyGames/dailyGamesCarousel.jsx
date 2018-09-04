@@ -4,7 +4,6 @@ import Carousel from '../common/carousel';
 import DailyGameCard from './dailyGameCard';
 
 const DailyGamesCarousel = ({games}) => {
-    console.log(games)
   return(
     <Fragment>
       <Carousel>
